@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Say Hello</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/shape.css') }}">
+	<!-- <link rel="stylesheet" href="../static/css/shape.css"> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+</head>
+<body>
+	<img src="https://w7.pngwing.com/pngs/411/745/png-transparent-hello-greeting-logo-online-chat-hello-text-logo-words-phrases.png"/>
+	<br>
+	<!-- Menú de navegación -->
+    <header>
+		<nav>
+			<ul class="menu">
+				<li><a href="#home">Inicio</a></li>
+				<li><a href="#about">Sobre Nosotros</a></li>
+				<li><a href="#services">Servicios</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</nav>	
+	</header>
+	
+	<form action="greet" method="post">
+		{% for message in get_flashed_messages() %}
+			<p> {{message}} </p>
+		{% endfor %}
+		<br>
+		<input type="text" name="name_input">
+		<br>
+		<input class="square" type="submit" value="GREET" id="greet">
+	</form>
+
+	
+
+	<script src="{{ url_for('static', filename='scripts/animations.js') }}"></script>
+</body>
+</html>

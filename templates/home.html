@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shape.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>¡Hola, Flask con Plantillas!</h1>
+        <div class="square"></div>
+        <script src="{{ url_for('static', filename='scripts/animations.js') }}"></script>
+    </main>
+</html>

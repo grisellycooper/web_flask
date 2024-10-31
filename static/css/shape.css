@@ -1,0 +1,40 @@
+.square {
+    width: 100px;       /* Ancho del cuadrado */
+    height: 100px;      /* Altura del cuadrado (igual que el ancho) */
+    background-color: #4CAF50; /* Color de fondo del cuadrado */
+    border: 2px solid #000;     /* Borde del cuadrado */
+}
+
+/* Estilo para el contenedor del menú */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Estilo para el menú */
+.menu {
+    list-style-type: none; /* Elimina los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Muestra los elementos en línea */
+    justify-content: center; /* Centra el menú horizontalmente */
+}
+
+/* Estilo para los elementos del menú */
+.menu li {
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+}
+
+/* Estilo para los enlaces del menú */
+.menu a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Estilo de fuente en negrita */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Efecto hover para los enlaces del menú */
+.menu a:hover {
+    color: #ffcc00; /* Color del texto al pasar el mouse */
+}
